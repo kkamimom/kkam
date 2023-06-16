@@ -1,0 +1,302 @@
+@font-face {
+	font-family: 'Branch';
+	font-weight:400;
+	src: url('/font/Branch.woff') format('woff');
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    /* color */
+    --white-color: #ffffff;
+    --gray-color: #d3d3d3;
+    --deep-gray-color: #c0c0c0;
+    --navy-color: #191970;
+    --yellow-color: #f0e68c;
+    --deep-yellow-color: #ffd700;
+    --black-color: #000000;
+}
+
+* {
+    list-style: none;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+a {
+    color: var(--gray-color);
+}
+
+#gnb {
+    position:fixed;
+    left:50%;
+    top:5vh;
+    transform:translate(-50%,0);
+    width: 100%;
+    max-width: 1200px;
+}
+#gnb ul {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+}
+#gnb ul li {
+    margin-right: 100px;
+}
+
+#gnb ul li:last-child {
+    margin-right: 0;
+}
+#gnb ul li a {
+    font-family: 'Poppins';
+    font-weight: 500;
+    color: var(--black-color);
+    font-size:17px;
+    line-height: 1;
+    border-bottom:1px solid var(--black-color);
+}
+#visual{
+    width: 100%;
+    height: 100vh;
+    position:relative;
+    overflow: hidden;
+}
+#visual .vimg {
+    z-index: -1;
+    background-image: url('/images/visualbg.jpg');
+    background-size: cover;
+    background-position: center center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+}
+@-webkit-keyframes zoom-b {
+    0% {
+        -ms-transform: scale(1, 1);
+        transform: scale(1, 1) translate(0px,0px);
+    }
+    25% {
+        -ms-transform: scale(1.1, 1.1);
+        transform: scale(1.2, 1.2) translate(1px,-1px);
+    }
+    50% {
+        -ms-transform: scale(1.2, 1.2);
+        transform: scale(1.3, 1.3) translate(0px,-2px);
+    }
+    75% {
+        -ms-transform: scale(1.1, 1.1);
+        transform: scale(1.2, 1.2) translate(-1px,1px);
+    }
+    100% {
+        -ms-transform: scale(1, 1);
+        transform: scale(1, 1) translate(0px,0px);
+    }
+}
+@-moz-keyframes zoom-b {
+    0% {
+        -ms-transform: scale(1, 1);
+        transform: scale(1, 1) translate(0px,0px);
+    }
+    25% {
+        -ms-transform: scale(1.1, 1.1);
+        transform: scale(1.1, 1.1) translate(1px,-1px);
+    }
+    50% {
+        -ms-transform: scale(1.2, 1.2);
+        transform: scale(1.2, 1.2) translate(0px,-2px);
+    }
+    75% {
+        -ms-transform: scale(1.1, 1.1);
+        transform: scale(1.1, 1.1) translate(-1px,1px);
+    }
+    100% {
+        -ms-transform: scale(1, 1);
+        transform: scale(1, 1) translate(0px,0px);
+    }
+}
+@-o-keyframes zoom-b {
+    0% {
+        -ms-transform: scale(1, 1);
+        transform: scale(1, 1) translate(0px,0px);
+    }
+    25% {
+        -ms-transform: scale(1.1, 1.1);
+        transform: scale(1.1, 1.1) translate(1px,-1px);
+    }
+    50% {
+        -ms-transform: scale(1.2, 1.2);
+        transform: scale(1.2, 1.2) translate(0px,-2px);
+    }
+    75% {
+        -ms-transform: scale(1.1, 1.1);
+        transform: scale(1.1, 1.1) translate(-1px,1px);
+    }
+    100% {
+        -ms-transform: scale(1, 1);
+        transform: scale(1, 1) translate(0px,0px);
+    }
+}
+@keyframes zoom-b {
+    0% {
+        -ms-transform: scale(1, 1);
+        transform: scale(1, 1) translate(0px,0px);
+    }
+    25% {
+        -ms-transform: scale(1.1, 1.1);
+        transform: scale(1.1, 1.1) translate(1px,-1px);
+    }
+    50% {
+        -ms-transform: scale(1.2, 1.2);
+        transform: scale(1.2, 1.2) translate(0px,-2px);
+    }
+    75% {
+        -ms-transform: scale(1.1, 1.1);
+        transform: scale(1.1, 1.1) translate(-1px,1px);
+    }
+    100% {
+        -ms-transform: scale(1, 1);
+        transform: scale(1, 1) translate(0px,0px);
+    }
+}
+#visual .vimg {
+    -webkit-animation: zoom-b 5s linear infinite alternate; /* Safari 4+ */
+    -moz-animation:    zoom-b 5s linear infinite alternate; /* Fx 5+ */
+    -o-animation:      zoom-b 5s linear infinite alternate; /* Opera 12+ */
+    animation:         zoom-b 5s linear infinite alternate; /* IE 10+, Fx 29+ */
+}
+#visual .inner {
+    width: 100%;
+    height: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    align-items: center;
+}
+#visual .inner .title {
+    font-family: 'Branch';
+    font-weight:400;
+    background: linear-gradient(139deg, rgba(134,81,73,1) 0%, rgba(151,107,96,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 100px;
+    line-height: 1.1;
+}
+#visual .inner .title span {
+    background:#fff;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#work {
+    width: 100%;
+    background: #ece8e5;
+}
+#work ul {
+    width: 100%;
+    margin: 0 auto;
+    border-top:1px solid #000;
+}
+#work ul li {
+    width: 100%;
+    border-bottom:1px solid #000;
+    position:relative;
+    background: #ece8e5;
+    transition: all 0.3s;
+    z-index: 3;
+}
+#work ul li:hover{
+    background: #000;
+    transition: all 0.3s;
+}
+#work ul li .inner{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 49px 0;
+    position:relative;
+}
+#work ul li .inner span {
+    display: block;
+    width: 100%;
+    font-family: 'Poppins';
+    font-weight:500;
+    color:#000;
+    font-size:17px;
+    line-height:1;
+    margin-bottom: 10px;
+}
+#work ul li .inner h4 {
+    display: inline-block;
+    font-family: 'Branch';
+    font-weight:400;
+    color:#000;
+    font-size:70px;
+    line-height:1;
+}
+#work ul li .inner .view {
+    position:absolute;
+    right:0;
+    top:50%;
+    transform:translate(0,-50%);
+    width: 100px;
+    height: 35px;
+}
+#work ul li .inner .view a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 33px;
+    border:1px solid #000;
+    border-radius:35px;
+    text-align:center;
+    font-size: 15px;
+    font-weight:500;
+    color:#000;
+}
+
+#work ul li .inner{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 49px 0;
+    position:relative;
+}
+#work ul li:hover .inner span {
+    color:#fff;
+}
+#work ul li:hover .inner h4 {
+    color:#fff;
+}
+#work ul li:hover .inner .view a{
+    border:1px solid #fff;
+    color:#fff;
+}
+
+#work ul li .inner .view a:hover {
+    background: #fff;
+    color:#000;
+}
+
+#contact {
+    width: 100%;
+    height: 100vh;
+    background: url(images/bg.jpg) no-repeat center top;
+}
+#contact .inner {
+    width: 100%;
+    height: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    align-items: center;
+    align-content: center;
+}
+#contact .inner h4 {
+    display: inline-block;
+    font-family: 'Branch';
+    font-weight:400;
+    color:#000;
+    font-size:100px;
+    line-height:1;
+}
