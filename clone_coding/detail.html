@@ -1,0 +1,251 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0, user-scalable=yes">
+    <title>프린트베이커리</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <link rel="icon" href="images/pb_favicon.png">
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <div class="container">
+                <div class="top">
+                    <div class="f_left">
+                        <h1 class="logo"><a href="index.html"><img src="images/logo.svg" alt=""></a></h1>
+                        <input type="search" class="head_search" placeholder="일상의 예술을 맛보다, 프린트베이커리">
+                    </div>
+                    <div class="f_right">
+                        <ul class="member">
+                            <li><a href="detail.html">로그인</a></li>
+                            <li><a href="detail.html">회원가입</a></li>
+                            <li class="wish"><a href="detail.html"><img src="images/icon_wish.png" alt="위시리스트"></a></li>
+                            <li class="cart"><span>0</span><a href="detail.html"><img src="images/icon_cart.svg" alt="장바구니"></a></li>
+                            <li class="lang">
+                                <select name="" id="">
+                                    <option value="KOR">KOR</option>
+                                    <option value="ENG">ENG</option>
+                                </select>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <ul class="gnb">
+                        <li><a href="detail.html">프로모션</a>
+                            <div class="menu_wrap">
+                                <ul>
+                                    <li><a href=""><img src="images/promotion01.jpeg" alt="">전체</a></li>
+                                    <li><a href=""><img src="images/promotion02.jpeg" alt="">큐레이션</a></li>
+                                    <li><a href=""><img src="images/promotion03.jpeg" alt="">이벤트</a></li>
+                                    <li><a href=""><img src="images/promotion04.jpeg" alt="">선물제안</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="on"><a href="detail.html">아트</a>
+                            <div class="menu_wrap">
+                                <ul>
+                                    <li><a href=""><img src="images/art01.jpeg" alt="">전체</a></li>
+                                    <li><a href=""><img src="images/art02.png" alt="">베스트</a></li>
+                                    <li><a href=""><img src="images/art03.png" alt="">오리지널</a></li>
+                                    <li><a href=""><img src="images/art04.png" alt="">리미티드에디션</a></li>
+                                    <li><a href=""><img src="images/art05.png" alt="">아트포스터</a></li>
+                                    <li><a href=""><img src="images/art06.png" alt="">아트북</a></li>
+                                    <li><a href=""><img src="images/art07.png" alt="">골프</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="detail.html">리빙</a>
+                            <div class="menu_wrap">
+                                <ul>
+                                    <li><a href=""><img src="images/living01.png" alt="">전체</a></li>
+                                    <li><a href=""><img src="images/living02.png" alt="">LAiK / GIFT</a></li>
+                                    <li><a href=""><img src="images/living03.jpg" alt="">테이블웨어</a></li>
+                                    <li><a href=""><img src="images/living04.jpg" alt="">오브제</a></li>
+                                    <li><a href=""><img src="images/living05.png" alt="">프래그런스</a></li>
+                                    <li><a href=""><img src="images/living06.png" alt="">패브릭</a></li>
+                                    <li><a href=""><img src="images/living07.png" alt="">월데코</a></li>
+                                    <li><a href=""><img src="images/living08.png" alt="">토이</a></li>
+                                    <li><a href=""><img src="images/living09.png" alt="">피크닉/캠핑</a></li>
+                                    <li><a href=""><img src="images/living10.png" alt="">데스크</a></li>
+                                    <li><a href=""><img src="images/living11.png" alt="">푸드</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="detail.html">가구</a>
+                            <div class="menu_wrap">
+                                <ul>
+                                    <li><a href=""><img src="images/furniture01.jpg" alt="">전체</a></li>
+                                    <li><a href=""><img src="images/furniture02.png" alt="">조명</a></li>
+                                    <li><a href=""><img src="images/furniture03.png" alt=""> 테이블</a></li>
+                                    <li><a href=""><img src="images/furniture04.png" alt="">체어</a></li>
+                                    <li><a href=""><img src="images/furniture05.png" alt="">스토리지</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="detail.html"><span class="open">OPEN</span>프리미엄</a></li>
+                        <li><a href="detail.html">아티스트</a></li>
+                    </ul>
+                    <script>
+                        $(document).ready(function () {
+                          $('.gnb > li').mouseenter(function () {
+                            $('.menu_wrap').removeClass('active'); 
+                            $(this).find('div').addClass('active');
+                          });
+                          
+                          $('.menu_wrap').mouseleave(function () {
+                            $('.menu_wrap').removeClass('active');
+                          });
+                        });
+                      </script>
+                    <div class="benefit"><a href="detail.html"><img src="images/icon_info.svg" alt="">프린트베이커리 회원혜택</a></div>
+                    
+                </div>
+            </div>
+        </header>
+
+        <div class="sub_category">
+            <ul>
+                <li class="on"><a href="detail.html">전체</a></li>
+                <li><a href="detail.html">베스트</a></li>
+                <li><a href="detail.html">오리지널</a></li>
+                <li><a href="detail.html">리미티드에디션</a></li>
+                <li><a href="detail.html">아트포스터</a></li>
+                <li><a href="detail.html">아트북</a></li>
+                <li><a href="detail.html">골프</a></li>
+            </ul>
+        </div>
+
+        <div class="sub_content">
+            <div class="detail_top">
+                <div class="detail_img">
+                    <div class="swiper detail_slide">
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide"><img src="images/detail1.png" alt=""></li>
+                            <li class="swiper-slide"><img src="images/detail2.jpg" alt=""></li>
+                            <li class="swiper-slide"><img src="images/detail3.jpg" alt=""></li>
+                        </ul>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                    <script>
+                        var swiper = new Swiper(".detail_slide", {
+                        pagination: {
+                            el: ".swiper-pagination",
+                        },
+                        navigation: {
+                            nextEl: ".swiper-button-next",
+                            prevEl: ".swiper-button-prev",
+                        },
+                        });
+                    </script>
+                </div>
+                <div class="detail_info">
+                    <h4>키미노에 Kiminoe<br>Afternoon, P, 2023</h4>
+                    <a href="#review" class="review">리뷰보기</a>
+                    <div class="d_price">
+                        <p>6,000,000원</p>
+                        <a href="detail.html" class="coupon">쿠폰받기<img src="images/coupon_download.svg" alt=""></a>
+                    </div>
+                    <ul>
+                        <li><span>크기</span><p>Image 91x72.7cm</p></li>
+                        <li><span>제작방식</span><p>Hand painted</p></li>
+                        <li><span>소재</span><p>Acrylic on board</p></li>
+                        <li><span>에디션</span><p>Original</p></li>
+                    </ul>
+                    <p>구매 전 동의</p>
+                    <label for=""><input type="radio" name="" id="">원화 작품 출고 준비를 위한 2-3주의 리드타임이 발생합니다.</label>
+                    <div class="price_all"><p>총 상품금액</p><span>6,000,000원</span></div>
+                    <div class="buy_btn">
+                        <a href="detail.html"><img src="images/icon_gift.svg" alt="">선물하기</a>
+                        <a href="detail.html">구매하기</a>
+                    </div>
+                </div>
+            </div>
+            <div class="detail_btm">
+                <div class="db_left">
+                    <h5>작품 정보</h5>
+                    <p>일본을 중심으로 전 세계적으로 다양한 활동을 선보이고 있는 키미노에 작가는 디지털 작업을 기반으로 미니멀한 작품들을 주로 선보인다. 감각적인 색감의 배경과 단순하지만 자유롭게 뻗어나가는 선들로 구성된 인물화에 작가는 관객들로 하여금 전시명 "Holiday"처럼 일상에 여유를 가지고 자신만의 고유한 색깔로 채워 나갔으면 하는 바램을 담고 있다.</p>
+                    <br><br>
+                    <p> 키미노에 개인전 Holiday 안내 <br>
+                    - 기간 : 6월 8일 (목) ~ 6월 21일 (수) <br>
+                    - 장소 : PBG 더현대서울 (영등포구 여의대로 108) </p>
+                </div>
+                <div class="db_right">
+                    <h5>구매 안내</h5>
+                    <ul>
+                        <li><a href="detail.html">구매 전 유의사항</a></li>
+                        <li><a href="detail.html">배송 안내</a></li>
+                        <li><a href="detail.html">교환 및 반품</a></li>
+                        <li><a href="detail.html">제품 문의</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="foot_top">
+                <div class="ft_left">
+                    <ul class="f_menu1">
+                        <li><a href="detail.html">
+                            <h4>위베이크</h4>
+                            <p>커피 한 잔과 읽는 <br>가장 따끈한 미술 소식</p>
+                        </a></li>
+                        <li><a href="detail.html">
+                            <h4>전시소식</h4>
+                            <p>놓치면 안될<br>뉴웨이브 아티스트 전시</p>
+                        </a></li>
+                        <li><a href="detail.html">
+                                <h4>뉴스레터</h4>
+                                <p>아트에디터가 보내는 편지,<br>소중한 뒷 이야기</p>
+                        </a></li>
+                    </ul>
+                    <ul class="f_menu2">
+                        <li><a href="index.html"><h1 class="f_logo"><img src="images/logo.svg" alt=""></h1></a></li>
+                        <li><a href="detail.html">매장</a></li>
+                        <li><a href="detail.html">PB아카이브</a></li>
+                        <li><a href="detail.html">공지사항</a></li>
+                        <li><a href="detail.html">회원혜택</a></li>
+                        <li><a href="detail.html">채용</a></li>
+                        <li><a href="detail.html">입점</a></li>
+                    </ul>
+                </div>
+                <div class="ft_right">
+                    <form action="">
+                        <fieldset> 
+                            <input type="text" placeholder="이름">
+                            <input type="text" placeholder="이메일 *">
+                            <label>
+                                <input type="checkbox" id="agree" value="pbagree">
+                                <button id="agree_btn" class="pbagree_btn" type="button"><span>(필수)</span> 개인정보 수집 및 이용에 동의합니다.</button>
+                            </label>
+                            <button type="submit">뉴스레터 구독하기</button>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+            <div class="foot_btm">
+                <address>주식회사 피비지&nbsp;대표 김소형&nbsp;주소 [06017] 서울특별시 강남구 압구정로42길 24-6, 2,3,5,6층&nbsp;사업자번호 428-87-00761&nbsp;통신판매업 제2022-서울강남-03517호 <br>메일 web_master@printbakery.com&nbsp;개인정보보호책임자 이지훈&nbsp;대표번호 1599-3403&nbsp;팩스 02-391-2017&nbsp;호스팅 카페24(주)&nbsp;<a href="detail.html">이용약관</a>&nbsp;<a href="detail.html">개인정보보호방침</a>&nbsp;SITE BY BATON</address>
+                <ul>
+                    <li><a href="detail.html"><img src="images/icon_instagram.svg" alt=""></a></li>
+                    <li><a href="detail.html"><img src="images/icon_youtube.svg" alt=""></a></li>
+                    <li><a href="detail.html"><img src="images/icon_kakao.svg" alt=""></a></li>
+                    <li><a href="detail.html"><img src="images/icon_apps.svg" alt=""></a></li>
+                </ul>
+            </div>
+        </footer>
+        
+        <div class="require">
+            <a href="detail.html"><img src="images/require.png" alt=""></a>
+        </div>
+    </div>
+</body>
+
+</html>
+

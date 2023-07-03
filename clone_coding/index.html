@@ -1,0 +1,571 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0, user-scalable=yes">
+    <title>프린트베이커리</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <link rel="icon" href="images/pb_favicon.png">
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <div class="container">
+                <div class="top">
+                    <div class="f_left">
+                        <h1 class="logo"><a href="index.html"><img src="images/logo.svg" alt=""></a></h1>
+                        <input type="search" class="head_search" placeholder="일상의 예술을 맛보다, 프린트베이커리">
+                    </div>
+                    <div class="f_right">
+                        <ul class="member">
+                            <li><a href="detail.html">로그인</a></li>
+                            <li><a href="detail.html">회원가입</a></li>
+                            <li class="wish"><a href="detail.html"><img src="images/icon_wish.png" alt="위시리스트"></a></li>
+                            <li class="cart"><span>0</span><a href="detail.html"><img src="images/icon_cart.svg" alt="장바구니"></a></li>
+                            <li class="lang">
+                                <select name="" id="">
+                                    <option value="KOR">KOR</option>
+                                    <option value="ENG">ENG</option>
+                                </select>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <ul class="gnb">
+                        <li><a href="detail.html">프로모션</a>
+                            <div class="menu_wrap">
+                                <ul>
+                                    <li><a href=""><img src="images/promotion01.jpeg" alt="">전체</a></li>
+                                    <li><a href=""><img src="images/promotion02.jpeg" alt="">큐레이션</a></li>
+                                    <li><a href=""><img src="images/promotion03.jpeg" alt="">이벤트</a></li>
+                                    <li><a href=""><img src="images/promotion04.jpeg" alt="">선물제안</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="detail.html">아트</a>
+                            <div class="menu_wrap">
+                                <ul>
+                                    <li><a href=""><img src="images/art01.jpeg" alt="">전체</a></li>
+                                    <li><a href=""><img src="images/art02.png" alt="">베스트</a></li>
+                                    <li><a href=""><img src="images/art03.png" alt="">오리지널</a></li>
+                                    <li><a href=""><img src="images/art04.png" alt="">리미티드에디션</a></li>
+                                    <li><a href=""><img src="images/art05.png" alt="">아트포스터</a></li>
+                                    <li><a href=""><img src="images/art06.png" alt="">아트북</a></li>
+                                    <li><a href=""><img src="images/art07.png" alt="">골프</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="detail.html">리빙</a>
+                            <div class="menu_wrap">
+                                <ul>
+                                    <li><a href=""><img src="images/living01.png" alt="">전체</a></li>
+                                    <li><a href=""><img src="images/living02.png" alt="">LAiK / GIFT</a></li>
+                                    <li><a href=""><img src="images/living03.jpg" alt="">테이블웨어</a></li>
+                                    <li><a href=""><img src="images/living04.jpg" alt="">오브제</a></li>
+                                    <li><a href=""><img src="images/living05.png" alt="">프래그런스</a></li>
+                                    <li><a href=""><img src="images/living06.png" alt="">패브릭</a></li>
+                                    <li><a href=""><img src="images/living07.png" alt="">월데코</a></li>
+                                    <li><a href=""><img src="images/living08.png" alt="">토이</a></li>
+                                    <li><a href=""><img src="images/living09.png" alt="">피크닉/캠핑</a></li>
+                                    <li><a href=""><img src="images/living10.png" alt="">데스크</a></li>
+                                    <li><a href=""><img src="images/living11.png" alt="">푸드</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="detail.html">가구</a>
+                            <div class="menu_wrap">
+                                <ul>
+                                    <li><a href=""><img src="images/furniture01.jpg" alt="">전체</a></li>
+                                    <li><a href=""><img src="images/furniture02.png" alt="">조명</a></li>
+                                    <li><a href=""><img src="images/furniture03.png" alt=""> 테이블</a></li>
+                                    <li><a href=""><img src="images/furniture04.png" alt="">체어</a></li>
+                                    <li><a href=""><img src="images/furniture05.png" alt="">스토리지</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="detail.html"><span class="open">OPEN</span>프리미엄</a></li>
+                        <li><a href="detail.html">아티스트</a></li>
+                    </ul>
+                    <script>
+                        $(document).ready(function () {
+                          $('.gnb > li').mouseenter(function () {
+                            $('.menu_wrap').removeClass('active'); 
+                            $(this).find('div').addClass('active');
+                          });
+                          
+                          $('.menu_wrap').mouseleave(function () {
+                            $('.menu_wrap').removeClass('active');
+                          });
+                        });
+                      </script>
+                    <div class="benefit"><a href="detail.html"><img src="images/icon_info.svg" alt="">프린트베이커리 회원혜택</a></div>
+                    
+                </div>
+            </div>
+        </header>
+        <div class="banner_wrap">
+            <div class="banner_top">
+                <div class="bt1">
+                    <ul>
+                        <li><a href="detail.html">
+                            <h3>비오는 날, 당신의 세상을 채색하는<br>아름다운 협업</h3>
+                            <img src="images/Thum_121-2.jpeg" alt="">
+                        </a></li>
+                        <li><a href="detail.html">
+                            <h3>프베랑 썸머,<br>LUCKY BOX EVENT</h3>
+                            <img src="images/Thum_12-18.jpeg" alt="">
+                        </a></li>
+                    </ul>
+                </div>
+                <div class="bt2">
+                    <ul>
+                        <li><a href="detail.html">
+                            <h3>일상에 색을 더하는 작품<br>Artist 키미노에</h3>
+                            <img src="images/Thum_11-22.jpeg" alt="">
+                        </a></li>
+                    </ul>
+                </div>
+                <div class="bt3">
+                    <ul>
+                        <li><a href="detail.html">
+                            <h3>다양한 시선이 흐트러지지 않게<br>윤형택 개인전</h3>
+                            <img src="images/Thum_12-16.jpeg" alt="">
+                        </a></li>
+                        <li><a href="detail.html">
+                            <h3>[내 작품 판매하기]<br>PB Labs의 첫번째 프로젝트를 소개합니다!</h3>
+                            <img src="images/Thum_1-8.jpeg" alt="">
+                        </a></li>
+                        <li><a href="detail.html">
+                            <h3>일상에 활력을 불어넣어 줄 컬러를 만나보세요!</h3>
+                            <img src="images/Thum_11-23.jpeg" alt="">
+                        </a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="banner_btm">
+                <div class="bb1">
+                    <ul>
+                        <li><a href="detail.html">
+                            <h3>가장 밝은 세상에서 전하는 위로<br>김제언 인터뷰</h3>
+                            <img src="images/Thum_12-15.jpeg" alt="">
+                        </a></li>
+                    </ul>
+                </div>
+                <div class="bb2">
+                    <ul>
+                        <li><a href="detail.html">
+                            <h3>우리집 미술관<br>마스터피스의 생생한 감동</h3>
+                            <img src="images/Thum-1212.jpeg" alt="">
+                        </a></li>
+                        <li><a href="detail.html">
+                            <h3>Fondness, 윤형택 개인전 기념<br>10주년 아트포스터 출시</h3>
+                            <img src="images/Thum_22-2-4.jpeg" alt="">
+                        </a></li>
+                    </ul>
+                </div>
+                <div class="bb3">
+                    <ul>
+                        <li><a href="detail.html">
+                            <h3>Home Sweet Home!<br>그레타프리든</h3>
+                            <img src="images/Thum_122.jpeg" alt="">
+                        </a></li>
+                        <li><a href="detail.html">
+                            <h3>호암재단이 선택한<br>김환기의 40년 예술 여정</h3>
+                            <img src="images/Thum_12-11.jpeg" alt="">
+                        </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="curation">
+            <h3>이달의 큐레이션</h3>
+            <p>새로운 프로모션</p>
+            <div class="swiper curation_slide">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide curation_list">
+                        <div class="c_img"><img src="images/Thum_12-18.jpeg" alt=""></div>
+                        <div class="c_tag"><span>이벤트</span><span>6.22 - 7.21</span></div>
+                        <h4>프베랑 썸머, LUCKY BOX EVENT</h4>
+                        <p>최대 할인율 85%!! 실패 없는 3/5/10만원 럭키 박스로 시원한 여름을 준비해보세요.</p>
+                        <ul>
+                            <li><a href="detail.html">
+                                <div class="shop_img"><img src="images/shopimg1-1.png" alt=""></div>
+                                <div class="shop_info">
+                                    <h5>프린트베이커리 printbakery<br>LUCKY BOX - 3만원</h5>
+                                    <p class="price">30,000원</p>
+                                    <p class="wish"><img src="images/icon_wish2.png" alt=""></p>
+                                </div>
+                            </a></li>
+                            <li><a href="detail.html">
+                                <div class="shop_img"><img src="images/shopimg1-1.png" alt=""></div>
+                                <div class="shop_info">
+                                    <h5>프린트베이커리 printbakery<br>LUCKY BOX - 5만원</h5>
+                                    <p class="price">50,000원</p>
+                                    <p class="wish"><img src="images/icon_wish2.png" alt=""></p>
+                                </div>
+                            </a></li>
+                            <li><a href="detail.html">
+                                <div class="shop_img"><img src="images/shopimg1-1.png" alt=""></div>
+                                <div class="shop_info">
+                                    <h5>프린트베이커리 printbakery<br>LUCKY BOX - 10만원</h5>
+                                    <p class="price">100,000원</p>
+                                    <p class="wish"><img src="images/icon_wish2.png" alt=""></p>
+                                </div>
+                            </a></li>
+                        </ul>
+                    </div>
+                    <div class="swiper-slide curation_list">
+                        <div class="c_img"><img src="images/Thum_22-2-4.jpeg" alt=""></div>
+                        <div class="c_tag"><span>6.29 - 7.16</span></div>
+                        <h4>Fondness, PBG 윤형택 개인전 기념 프로모션</h4>
+                        <ul>
+                            <li><a href="detail.html">
+                                <div class="shop_img"><img src="images/shopimg2-1.png" alt=""></div>
+                                <div class="shop_info">
+                                    <h5>윤형택 Yoon Hyungtaek<br>[PB 10주년 기념 포스터] Fondness 2305-03</h5>
+                                    <p class="price">56,000원</p>
+                                    <p class="wish"><img src="images/icon_wish2.png" alt=""></p>
+                                </div>
+                            </a></li>
+                            <li><a href="detail.html">
+                                <div class="shop_img"><img src="images/shopimg2-2.jpg" alt=""></div>
+                                <div class="shop_info">
+                                    <h5>윤형택 Yoon Hyungtaek<br>Fondness 2306-43, 2023</h5>
+                                    <p class="price">구매 별도 문의</p>
+                                    <p class="wish"><img src="images/icon_wish2.png" alt=""></p>
+                                </div>
+                            </a></li>
+                            <li><a href="detail.html">
+                                <div class="shop_img"><img src="images/shopimg2-3.jpeg" alt=""></div>
+                                <div class="shop_info">
+                                    <h5>윤형택 Yoon Hyungtaek<br>Fondness 2306-47, 2023</h5>
+                                    <p class="price">구매 별도 문의</p>
+                                    <p class="wish"><img src="images/icon_wish2.png" alt=""></p>
+                                </div>
+                            </a></li>
+                        </ul>
+                    </div>
+                    <div class="swiper-slide curation_list">
+                        <div class="c_img"><img src="images/Thum_11-22.jpeg" alt=""></div>
+                        <div class="c_tag"><span>이벤트</span><span>6.27 - 7.30</span></div>
+                        <h4>키미노에, Color Your Day!</h4>
+                        <p>감각적인 색감과 단순한 선, 일상에 색을 더하는 작가 키미노에의 작품을 소개합니다.</p>
+                        <ul>
+                            <li><a href="detail.html">
+                                <div class="shop_img"><img src="images/shopimg3-1.png" alt=""></div>
+                                <div class="shop_info">
+                                    <h5>키미노에 Kiminoe<br>Afternoon, P, 2023</h5>
+                                    <p class="price">6,000,000원</p>
+                                    <p class="wish"><img src="images/icon_wish2.png" alt=""></p>
+                                </div>
+                            </a></li>
+                            <li><a href="detail.html">
+                                <div class="shop_img"><img src="images/shopimg3-2.png" alt=""></div>
+                                <div class="shop_info">
+                                    <h5>키미노에 Kiminoe<br>S, blue, 2023</h5>
+                                    <p class="price">2,000,000원</p>
+                                    <p class="wish"><img src="images/icon_wish2.png" alt=""></p>
+                                </div>
+                            </a></li>
+                            <li><a href="detail.html">
+                                <div class="shop_img"><img src="images/shopimg3-3.png" alt=""></div>
+                                <div class="shop_info">
+                                    <h5>키미노에 Kiminoe<br>Grape, 2023</h5>
+                                    <p class="price">1,200,000원</p>
+                                    <p class="wish"><img src="images/icon_wish2.png" alt=""></p>
+                                </div>
+                            </a></li>
+                        </ul>
+                    </div>
+                    <div class="swiper-slide curation_list">
+                        <div class="c_img"><img src="images/shopimg4.jpeg" alt=""></div>
+                        <div class="c_tag"><span>선물제안</span><span>6.27 - 8.31</span></div>
+                        <h4>독특한 조형감, 디지털 크래프트 류종대</h4>
+                        <p>독특한 조형감이 느껴지는 3D프린터 컵을 소개합니다. 당신의 일상에 활력을 불어넣어 줄 컬러를 만나보세요.</p>
+                        <ul>
+                            <li><a href="detail.html">
+                                <div class="shop_img"><img src="images/shopimg4-1.png" alt=""></div>
+                                <div class="shop_info">
+                                    <h5>류종대 Ryu JongDae<br>컬러 시리즈 볼륨 - 오렌지</h5>
+                                    <p class="price2">80,000원</p><p class="sale"><span>72,000원 <em>10%</em></span></p>
+                                    <p class="wish"><img src="images/icon_wish2.png" alt=""></p>
+                                </div>
+                            </a></li>
+                            <li><a href="detail.html">
+                                <div class="shop_img"><img src="images/shopimg4-2.png" alt=""></div>
+                                <div class="shop_info">
+                                    <h5>류종대 Ryu JongDae<br>컬러 시리즈 볼륨 - 레드</h5>
+                                    <p class="price2">80,000원</p><p class="sale"><span>72,000원 <em>10%</em></span></p>
+                                    <p class="wish"><img src="images/icon_wish2.png" alt=""></p>
+                                </div>
+                            </a></li>
+                            <li><a href="detail.html">
+                                <div class="shop_img"><img src="images/shopimg4-3.png" alt=""></div>
+                                <div class="shop_info">
+                                    <h5>류종대 Ryu JongDae<br>컬러 시리즈 볼륨 - 블루</h5>
+                                    <p class="price2">80,000원</p><p class="sale"><span>72,000원 <em>10%</em></span></p>
+                                    <p class="wish"><img src="images/icon_wish2.png" alt=""></p>
+                                </div>
+                            </a></li>
+                        </ul>
+                    </div>
+                    <div class="swiper-slide curation_list">
+                        <div class="c_img"><img src="images/shopimg5.jpeg" alt=""></div>
+                        <div class="c_tag"><span>선물제안</span><span>6.23 - 8.31</span></div>
+                        <h4>일상에 피어나는 컬러와 패턴 - 아트 우산</h4>
+                        <p>미술의 감동과 실용성이 한자리에 어우러진 이 우산은 당신의 스타일을 완성해줄 것입니다. 비 올 때마다 당신은 더욱 특별하게 빛날 것입니다.</p>
+                        <ul>
+                            <li><a href="detail.html">
+                                <div class="shop_img"><img src="images/shopimg5-1.png" alt=""></div>
+                                <div class="shop_info">
+                                    <h5>그레타프리든 x 프린트베이커리<br>THE HOME - 아트우산</h5>
+                                    <p class="price2">44,000원</p><p class="sale"><span>39,600원 <em>10%</em></span></p>
+                                    <p class="wish"><img src="images/icon_wish2.png" alt=""></p>
+                                </div>
+                            </a></li>
+                            <li><a href="detail.html">
+                                <div class="shop_img"><img src="images/shopimg5-2.png" alt=""></div>
+                                <div class="shop_info">
+                                    <h5>오아물 루 x 프린트베이커리<br>MAY - 아트우산</h5>
+                                    <p class="price2">44,000원</p><p class="sale"><span>39,600원 <em>10%</em></span></p>
+                                    <p class="wish"><img src="images/icon_wish2.png" alt=""></p>
+                                </div>
+                            </a></li>
+                            <li><a href="detail.html">
+                                <div class="shop_img"><img src="images/shopimg5-3.png" alt=""></div>
+                                <div class="shop_info">
+                                    <h5>유선태 x 프린트베이커리<br>신기루 - 아트우산</h5>
+                                    <p class="price2">48,000원</p><p class="sale"><span>43,200원 <em>10%</em></span></p>
+                                    <p class="wish"><img src="images/icon_wish2.png" alt=""></p>
+                                </div>
+                            </a></li>
+                        </ul>
+                    </div>
+                    <div class="swiper-slide curation_list">
+                        <div class="c_img"><img src="images/shopimg6.jpeg" alt=""></div>
+                        <div class="c_tag"><span>큐레이션</span></div>
+                        <h4>Home Sweet Home! 그레타프리든</h4>
+                        <p>보기만해도 미소가 지어지는 그레타 할머니와 프리든 할아버지의 소소하고 특별한 순간이 담긴 아트포스터 & 굿즈를 소개합니다.</p>
+                        <ul>
+                            <li><a href="detail.html">
+                                <div class="shop_img"><img src="images/shopimg6-1.png" alt=""></div>
+                                <div class="shop_info">
+                                    <h5>그레타프리든 Greta Frieden<br>The stars</h5>
+                                    <p class="price">150,000원</p>
+                                    <p class="wish"><img src="images/icon_wish2.png" alt=""></p>
+                                </div>
+                            </a></li>
+                            <li><a href="detail.html">
+                                <div class="shop_img"><img src="images/shopimg6-2.jpeg" alt=""></div>
+                                <div class="shop_info">
+                                    <h5>그레타프리든 Greta Frieden<br>Journey - art mirror</h5>
+                                    <p class="price">200,000원</p>
+                                    <p class="wish"><img src="images/icon_wish2.png" alt=""></p>
+                                </div>
+                            </a></li>
+                            <li><a href="detail.html">
+                                <div class="shop_img"><img src="images/shopimg6-3.png" alt=""></div>
+                                <div class="shop_info">
+                                    <h5>그레타프리든 Greta Frieden<br>Love</h5>
+                                    <p class="price">150,000원</p>
+                                    <p class="wish"><img src="images/icon_wish2.png" alt=""></p>
+                                </div>
+                            </a></li>
+                        </ul>
+                    </div>
+                    <div class="swiper-slide curation_list">
+                        <div class="c_img"><img src="images/shopimg7.jpg" alt=""></div>
+                        <div class="c_tag"><span>이벤트</span></div>
+                        <h4>LOVE IN BLUE (5%off)</h4>
+                        <p>점점 더워지는 날씨에 맞서 싸우는 블루 아이템들 다 나와~! 보기만 해도 시원해지는 블루 색상의 다양한 아이템을 만나보세요!</p>
+                        <ul>
+                            <li><a href="detail.html">
+                                <div class="shop_img"><img src="images/shopimg7-1.png" alt=""></div>
+                                <div class="shop_info">
+                                    <h5>PRINT BAKERY<br>LOVE IN BLUE 인센스 홀더</h5>
+                                    <p class="price">35,000원</p>
+                                    <p class="wish"><img src="images/icon_wish2.png" alt=""></p>
+                                </div>
+                            </a></li>
+                            <li><a href="detail.html">
+                                <div class="shop_img"><img src="images/shopimg7-2.png" alt=""></div>
+                                <div class="shop_info">
+                                    <h5>취급주의 anti-fragile<br>holding a water basket</h5>
+                                    <p class="price">68,000원</p>
+                                    <p class="wish"><img src="images/icon_wish2.png" alt=""></p>
+                                </div>
+                            </a></li>
+                            <li><a href="detail.html">
+                                <div class="shop_img"><img src="images/shopimg7-3.png" alt=""></div>
+                                <div class="shop_info">
+                                    <h5>머지 MERGE<br>BUBBLE MUG - SEA</h5>
+                                    <p class="price">39,000원</p>
+                                    <p class="wish"><img src="images/icon_wish2.png" alt=""></p>
+                                </div>
+                            </a></li>
+                        </ul>
+                    </div>
+                    <div class="swiper-slide curation_list">
+                        <div class="c_img"><img src="images/shopimg8.jpg" alt=""></div>
+                        <div class="c_tag"><span>큐레이션</span></div>
+                        <h4>빛의 모습에 따라 달라지는 매력</h4>
+                        <p>빛이 투과함에 따라 만들어지는 여러 모습을 담은 가구와 오브제를 소개합니다! 여름의 빛을 담아보세요!</p>
+                        <ul>
+                            <li><a href="detail.html">
+                                <div class="shop_img"><img src="images/shopimg8-1.png" alt=""></div>
+                                <div class="shop_info">
+                                    <h5>손상우 Son Sangwoo<br>키리 - 트레이테이블</h5>
+                                    <p class="price">800,000원</p>
+                                    <p class="wish"><img src="images/icon_wish2.png" alt=""></p>
+                                </div>
+                            </a></li>
+                            <li><a href="detail.html">
+                                <div class="shop_img"><img src="images/shopimg8-2.png" alt=""></div>
+                                <div class="shop_info">
+                                    <h5>손상우 Son Sangwoo<br>불투명한 무게 - 소반</h5>
+                                    <p class="price">1,000,000원</p>
+                                    <p class="wish"><img src="images/icon_wish2.png" alt=""></p>
+                                </div>
+                            </a></li>
+                            <li><a href="detail.html">
+                                <div class="shop_img"><img src="images/shopimg8-3.png" alt=""></div>
+                                <div class="shop_info">
+                                    <h5>쉘 위 댄스 Shall We Dance<br>Blank wind - Clear</h5>
+                                    <p class="price">60,000원</p>
+                                    <p class="wish"><img src="images/icon_wish2.png" alt=""></p>
+                                </div>
+                            </a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="swiper-bottom">
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next"></div>
+                </div>  
+            </div>
+            <script>
+                var swiper = new Swiper(".curation_slide", {
+                    slidesPerView: 1,
+                    spaceBetween: 16,
+                    breakpoints: {
+                        769: {
+                            slidesPerView: 3,
+                            spaceBetween: 32
+                        },
+                        1025: {
+                            slidesPerView: 4,
+                            spaceBetween: 40
+                        },
+                    },
+                    pagination: {
+                        el: ".swiper-pagination",
+                        clickable: true,
+                        type: 'fraction',
+                    },
+                    navigation: {
+                        nextEl: ".swiper-button-next",
+                        prevEl: ".swiper-button-prev",
+                    },
+                });
+            </script>
+        </div>
+
+        <div class="premieum">
+            <h3>프리미엄</h3>
+            <p>프린트베이커리 회원을 위한 프리미엄 작품을 소장하세요</p>
+            <ul>
+                <li><a href="detail.html">
+                    <div class="p_img">
+                        <div class="p_tag"><span>오리지널</span><span>PB전속작가</span></div>
+                        <img src="images/premieum1.jpg" alt="">
+                    </div>
+                    <div class="p_txt">
+                        <div class="a_img"><img src="images/artist.jpeg" alt=""></div>
+                        <div class="a_txt">
+                            <p>윤형택</p>
+                            <h4>Fondness 2306-49, 2023</h4>
+                        </div>
+                    </div>
+                </a></li>
+                <li><a href="detail.html">
+                    <div class="p_img">
+                        <div class="p_tag"><span>오리지널</span><span>PB전속작가</span></div>
+                        <img src="images/premieum2.jpg" alt="">
+                    </div>
+                    <div class="p_txt">
+                        <div class="a_img"><img src="images/artist.jpeg" alt=""></div>
+                        <div class="a_txt">
+                            <p>윤형택</p>
+                            <h4>Fondness 2306-43, 2023</h4>
+                        </div>
+                    </div>
+                </a></li>
+            </ul>
+        </div>
+        
+        <footer>
+            <div class="foot_top">
+                <div class="ft_left">
+                    <ul class="f_menu1">
+                        <li><a href="detail.html">
+                            <h4>위베이크</h4>
+                            <p>커피 한 잔과 읽는 <br>가장 따끈한 미술 소식</p>
+                        </a></li>
+                        <li><a href="detail.html">
+                            <h4>전시소식</h4>
+                            <p>놓치면 안될<br>뉴웨이브 아티스트 전시</p>
+                        </a></li>
+                        <li><a href="detail.html">
+                                <h4>뉴스레터</h4>
+                                <p>아트에디터가 보내는 편지,<br>소중한 뒷 이야기</p>
+                        </a></li>
+                    </ul>
+                    <ul class="f_menu2">
+                        <li><a href="index.html"><h1 class="f_logo"><img src="images/logo.svg" alt=""></h1></a></li>
+                        <li><a href="detail.html">매장</a></li>
+                        <li><a href="detail.html">PB아카이브</a></li>
+                        <li><a href="detail.html">공지사항</a></li>
+                        <li><a href="detail.html">회원혜택</a></li>
+                        <li><a href="detail.html">채용</a></li>
+                        <li><a href="detail.html">입점</a></li>
+                    </ul>
+                </div>
+                <div class="ft_right">
+                    <form action="">
+                        <fieldset> 
+                            <input type="text" placeholder="이름">
+                            <input type="text" placeholder="이메일 *">
+                            <label>
+                                <input type="checkbox" id="agree" value="pbagree">
+                                <button id="agree_btn" class="pbagree_btn" type="button"><span>(필수)</span> 개인정보 수집 및 이용에 동의합니다.</button>
+                            </label>
+                            <button type="submit">뉴스레터 구독하기</button>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+            <div class="foot_btm">
+                <address>주식회사 피비지&nbsp;대표 김소형&nbsp;주소 [06017] 서울특별시 강남구 압구정로42길 24-6, 2,3,5,6층&nbsp;사업자번호 428-87-00761&nbsp;통신판매업 제2022-서울강남-03517호 <br>메일 web_master@printbakery.com&nbsp;개인정보보호책임자 이지훈&nbsp;대표번호 1599-3403&nbsp;팩스 02-391-2017&nbsp;호스팅 카페24(주)&nbsp;<a href="detail.html">이용약관</a>&nbsp;<a href="detail.html">개인정보보호방침</a>&nbsp;SITE BY BATON</address>
+                <ul>
+                    <li><a href="detail.html"><img src="images/icon_instagram.svg" alt=""></a></li>
+                    <li><a href="detail.html"><img src="images/icon_youtube.svg" alt=""></a></li>
+                    <li><a href="detail.html"><img src="images/icon_kakao.svg" alt=""></a></li>
+                    <li><a href="detail.html"><img src="images/icon_apps.svg" alt=""></a></li>
+                </ul>
+            </div>
+        </footer>
+        
+        <div class="require">
+            <a href="detail.html"><img src="images/require.png" alt=""></a>
+        </div>
+    </div>
+</body>
+
+</html>
+
