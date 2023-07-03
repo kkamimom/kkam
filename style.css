@@ -614,7 +614,7 @@ body {
     line-height: 1.1;
 }
 #work > ul > li .inner {
-    padding: 5rem;
+    padding: 10rem 5rem;
 }
 #work > ul > li .inner > h4 { 
     font-size: 7rem;
