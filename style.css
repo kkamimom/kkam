@@ -297,6 +297,11 @@ body {
     background-size: cover;
     transition: all 0.3s;
 }
+#work > ul > li:nth-child(5):hover {
+    background: url(images/work_bg5.jpeg) no-repeat center center;
+    background-size: cover;
+    transition: all 0.3s;
+}
 
 #work > ul > li .inner span {
     display: block;
